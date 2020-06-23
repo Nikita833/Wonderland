@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <nav class="navbar sticky-top navbar-dark bg-success navbar-expand-sm">
+      <a class="navbar-brand" href="#">
+        <img src="icons\iconfinder_sale_1_3890937.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Сайт постоянных распродаж
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#IDofMENU" aria-controls="IDofMENU" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="IDofMENU">
+        <ul class="navbar-nav mr-auto text-white">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nDr1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Выбор картинки
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nDr1">
+              <a id="pic1" class="dropdown-item" href="#">Картинка новостей</a>
+              <a id="pic2" class="dropdown-item" href="#">Картинка корзинки</a>
+              <a id="pic3" class="dropdown-item" href="#">Картинка мешка</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nDr2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Выбор цвета
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nDr2">
+              <a id="col1" class="dropdown-item" href="#">Чёрный</a>
+              <a id="col2" class="dropdown-item" href="#">Синий</a>
+              <a id="col3" class="dropdown-item" href="#">Жёлтый</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nDr3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Выбор размера
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nDr3">
+              <a id="size1" class="dropdown-item" href="#">Малый</a>
+              <a id="size2" class="dropdown-item" href="#">Средний</a>
+              <a id="size3" class="dropdown-item" href="#">Большой</a>
+            </div>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col justify-content-center">
+          <img id="image" class="" src="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm" >
+          <h1 id="text">Это текст. Повелевайте мною из меню</h1>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+
+
+    <script type="text/javascript">
+      
+      $('#pic1').click(function(){
+        $("#image").attr("src","icons/1.png");
+      });
+
+      $('#pic2').click(function(){
+        $("#image").attr("src","icons/2.png");
+      });
+      $('#pic3').click(function(){
+        $("#image").attr("src","icons/3.png");
+      });
+
+      $('#col1').click(function(){
+        $("#text").css("color", "black");
+      });
+      $('#col2').click(function(){
+        $("#text").css("color", "blue");
+      });
+      $('#col3').click(function(){
+        $("#text").css("color", "yellow");
+      });
+
+      $('#size1').click(function(){
+        $("#text").css("font-size", "24pt");
+      });
+      $('#size2').click(function(){
+        $("#text").css("font-size", "36pt");
+      });
+      $('#size3').click(function(){
+        $("#text").css("font-size", "72pt");
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+h1 {
+	color: cyan;
+}
+b {
+	color:  red;
+}
+ins {
+	color: green;
+}
+del {
+	color: grey;
+}
+i {
+	color: purple;
+}
+table {
+	border: 3px solid pink;
+}
+p {
+	font-family:  Girassol;
+	color: pink;
+}

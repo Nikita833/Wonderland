@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container"> 
+      <form>
+        <div class="form-group">
+          <label for="emailID">Почтовый ящичек</label>
+          <input type="email" class="form-control" id="emailID" aria-describedby="podskazka" placeholder="Введите email">
+          <small id="podskazka" class="form-text text-muted">Клянёмся хранить Вашу почту вдали от злых третьих лиц.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="passID">Парольчик</label>
+          <input type="password" class="form-control" id="passID" placeholder="Введите пароль">
+        </div>
+        <div class="form-group">
+          <label for="sliderID">По шкале от 0 до 5, как хорошо вы сегодня выспались?</label>
+          <input type="range" class="custom-range" min="0" max="5" id="sliderID">
+        </div> 
+        <div class="text-center">
+          <h1 id="sliderText">
+           3 
+          </h1>
+        </div> 
+        
+        <div class="form-group">
+          
+          <div class="row ">
+              <div class="col-5 form-group">
+                <label for="Surname">Фамилия</label>
+                <input id="Surname" type="text" class="form-control form-control-lg" placeholder="Введите фамилию">
+              </div>
+              <div class="col-3 form-group">
+                <label for="Name">Имя</label>
+                <input id="Name" type="text" class="form-control form-control-lg" placeholder="Введите имя">
+              </div>
+              <div class="col form-group">
+                <label for="SecondName">Отчество</label>
+                <input id="SecondName" type="text" class="form-control form-control-lg" placeholder="Введите отчество">
+              </div>
+          </div>
+        <div class="row ">
+              <div class="col-3 form-group">
+                <label for="city">город</label>
+                <select id="city" class="form-control form-control-lg">
+                  <option selected>Томск</option>
+                  <option >Новосибирск</option>
+                  <option >Омск</option>
+                  <option >Красноярск</option>
+                </select>
+              </div>
+              <div class="col-5 form-group">
+                <label for="street">улица</label>
+                <input id="street" type="text" class="form-control form-control-lg" placeholder="Введите улицу">
+              </div>
+              <div class="col form-group">
+                <label for="house">дом</label>
+                <input id="house" type="text" class="form-control form-control-lg" placeholder="Введите дом">
+              </div>
+          </div>
+                 
+                <label for="Names">Представьтесь</label>
+                <input id="Names" type="text" class="form-control" placeholder="Введите ФИО">
+               
+               <br>
+               <label for="age">Укажите возраст</label>
+                <select id="age" class="form-control">
+                  <option selected>меньше семи</option>
+                  <option >от 7 до 12</option>
+                  <option >от 12 до 14</option>
+                  <option >14-18</option>
+                  <option >старше 18</option>
+                </select>
+
+             <br>
+             <label for="multipleCheck">Какими навыками владеете?</label>
+             <select multiple class="form-control" id="multipleCheck">
+                  <option>Microsoft Word</option>
+                  <option>Node.js</option>
+                  <option>JQuery</option>
+                  <option>Bootstrap</option>
+                  <option>Python</option>
+                </select>
+                <br>
+                <label for="textareaID">Напишите рефлексивное эссе о бабочках</label>
+              <textarea class="form-control" id="textareaID" rows="4"></textarea>
+
+        </div>
+
+       
+     
+        <button id="btn" type="submit"   class="btn btn-primary">Зарегистрировать       </button>
+
+      </form>
+    </div>
+
+    
+    
+    <!-- Optional JavaScript  -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript">
+      $("#sliderID").on("change", function(){
+        //alert($("#sliderID").val());
+        $("#sliderText").text($("#sliderID").val());
+      });
+    </script>
+  </body>
+</html>

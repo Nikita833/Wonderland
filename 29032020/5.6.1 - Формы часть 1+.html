@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+    </style>
+
+    <title>Маленький опрос</title>
+  </head>
+  <body>
+
+<nav class="navbar sticky-top navbar-dark  navbar-expand-sm">
+      <a class="navbar-brand" href="file:///C:/Users/home/Desktop/my%20progs/5.1/5.3.1.html">
+        <img id="logotip" src="img/81ef271fff224f408d6b6455815d238b.max-1200x800.jpg" class="d-inline-block align-top" alt="">
+       Морские коньки
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#IDofMENU" aria-controls="IDofMENU" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="IDofMENU">
+        <ul class="navbar-nav mr-auto text-white">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nDr1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             информация
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nDr1">
+             <a class="dropdown-item" href="#">описание</a>
+         <a class="dropdown-item" href="#">среда обитания и повседневная жизнь</a>
+         <a class="dropdown-item" href="#">История и продолжение рода</a>
+         <li class="nav-item">
+             <a class="konek" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D0%BA%D0%BE%D0%BD%D1%8C%D0%BA%D0%B8">Если хотите узнать больше</a>
+             <li class="nav-item">
+              <a class="us" href="file:///C:/Users/home/Desktop/my%20progs/5.1/5.4.1.2.html">О нас</a>
+            <li class="nav-item">
+            <a class="svazy" href="file:///C:/Users/home/Desktop/my%20progs/5.1/29032020/5.6.1%20-%20%D0%A4%D0%BE%D1%80%D0%BC%D1%8B%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%201+.html">Обратная связь</a>  
+
+  </div>
+
+    
+  
+  
+</nav>
+    <div class="container"> 
+      <form>
+       
+        
+        
+        
+        <div class="form-group">
+          
+          <div class="row ">
+              <div class="col-5 form-group">
+                <label for="Surname">Фамилия</label>
+                <input id="Surname" type="text" class="form-control form-control-lg" placeholder="Введите фамилию">
+              </div>
+              <div class="col-3 form-group">
+                <label for="Name">Имя</label>
+                <input id="Name" type="text" class="form-control form-control-lg" placeholder="Введите имя">
+              </div>
+              <div class="col form-group">
+                <label for="SecondName">Отчество</label>
+                <input id="SecondName" type="text" class="form-control form-control-lg" placeholder="Введите отчество">
+              </div>
+          </div>
+        <div class="row ">
+              <div class="col-3 form-group">
+                <label for="city">город</label>
+                <select id="city" class="form-control form-control-lg">
+                  <option selected>Томск</option>
+                  <option >Новосибирск</option>
+                  <option >Омск</option>
+                  <option >Красноярск</option>
+                </select>
+              </div>
+              <div class="col-5 form-group">
+                <label for="street">улица</label>
+                <input id="street" type="text" class="form-control form-control-lg" placeholder="Введите улицу">
+              </div>
+              <div class="col form-group">
+                <label for="house">дом</label>
+                <input id="house" type="text" class="form-control form-control-lg" placeholder="Введите дом">
+              </div>
+          </div>
+                 
+               
+               
+               <br>
+               <label for="age">Укажите возраст</label>
+                <select id="age" class="form-control">
+                  <option selected>меньше семи</option>
+                  <option >от 7 до 12</option>
+                  <option >от 12 до 14</option>
+                  <option >14-18</option>
+                  <option >старше 18</option>
+                </select>
+
+             <br>
+             <label for="multipleCheck">Какая у вас возникла проблема?</label>
+             <select multiple class="form-control" id="multipleCheck">
+                  <option>Статья неправильная</option>
+                  <option>Есть пожелания к автору</option>
+                  <option>Вам хочется поговорить</option>
+                  <option>Вы знаете больше о морских коньках</option>
+                  <option>Вы хороший програмист и можете доделать сайт</option>
+                </select>
+                <br>
+                <label for="textareaID">Если у вас есть предложения по решению проблем, напишите здесь.</label>
+              <textarea class="form-control" id="textareaID" rows="4"></textarea>
+
+        </div>
+
+       
+        <small id="podskazka" class="form-text text-muted">Нам важна каждая ваша проблема.
+          </small>
+        <button id="btn" type="submit"   class="btn btn-primary">отправить       </button>
+
+      </form>
+    </div>
+    
+
+<style type="text/css">
+  #logotip{
+    height: 30px;
+    width: 30px;
+  }
+ 
+    body {
+      background-color: #FFE4C4;
+    }
+   
+    .navbar{
+      background-color: #E9967A
+    }
+   
+    .navbar-brand{
+      color: #00FF00;
+    }
+    p{
+      font-family: Quicksand;
+      font-size: 14pt;
+    }
+   
+    footer{
+      background-color: #20B2AA;
+      
+    }
+    .svazy{
+      margin-left: 20pt;
+    }
+    .konek{
+      margin-left: 35pt;
+    }
+    .us{
+      margin-left: 45pt;
+    }
+</style>
+
+    
+    
+    <!-- Optional JavaScript  -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript">
+      $("#sliderID").on("change", function(){
+        //alert($("#sliderID").val());
+        $("#sliderText").text($("#sliderID").val());
+      });
+    </script>
+  </body>
+</html>
